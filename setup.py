@@ -8,7 +8,7 @@ setup(
   author = 'hannahbussi',                   # Type in your name
   author_email = 'hannah.busshoff@unisg.ch',      # Type in your E-Mail
   url = 'https://github.com/hannahbus/hbussi',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/hannahbus/hbussi/archive/refs/tags/v0.1.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/hannahbus/hbussi/archive/refs/tags/v1.0.tar.gz',    # I explain this later on
   keywords = ['TEST'],   # Keywords that define your package best
   install_requires=[   ],
   classifiers=[
