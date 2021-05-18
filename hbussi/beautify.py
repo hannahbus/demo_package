@@ -1,5 +1,5 @@
-import concurrent.futures 
-import math 
+import concurrent.futures
+import math
 
 def is_prime(n):
     if n < 2:
@@ -8,21 +8,17 @@ def is_prime(n):
         return True
     if n % 2 == 0:
         return False
+
     sqrt_n = int(math.floor(math.sqrt(n)))
     for i in range(3, sqrt_n + 1, 2):
         if n % i == 0:
             return False
     return True
 
-def test(PRIMES):
-    result = []
+def main():
     with concurrent.futures.ProcessPoolExecutor() as executor:
         for number, prime in zip(PRIMES, executor.map(is_prime, PRIMES)):
-            result.append(prime)
+            print('%d is prime: %s' % (number, prime))
 
-
-def main(PRIMES): 
-    test(PRIMES)
-
-    
-
+if __name__ == 'main':
+    main()
