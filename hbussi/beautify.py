@@ -1,4 +1,5 @@
 import concurrent.futures
+from concurrent.futures import freeze_support()
 import math
 
 def is_prime(n):
@@ -21,5 +22,6 @@ def main(PRIMES, addition = "test"):
             print('%d is prime: %s' % (number, prime))
             print(addition)
 
-if __name__ == 'main':
+if __name__ == '__main__':
+    freeze_support()
     main(PRIMES, addition)
