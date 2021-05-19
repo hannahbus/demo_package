@@ -16,3 +16,16 @@ twine upload --skip-existing dist/*
 ```
 
 You are all set, a new release of your package should be available on PyPI!
+
+
+## Demo 
+
+In the Anaconda Prompt (Windows) or Terminal (Unix-based OS) type
+
+````
+pip install hbussi==4.0 
+python 
+from hbussi import beautify 
+PRIMES = [123, 456, 99484848, 890933] 
+beautify.main(PRIMES)
+```
