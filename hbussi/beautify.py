@@ -15,11 +15,11 @@ def is_prime(n):
             return False
     return True
 
-def main(PRIMES, addition):
+def main(PRIMES, addition = "test"):
     with concurrent.futures.ProcessPoolExecutor() as executor:
         for number, prime in zip(PRIMES, executor.map(is_prime, PRIMES)):
             print('%d is prime: %s' % (number, prime))
             print(addition)
 
 if __name__ == 'main':
-    main(PRIMES, addition = "test")
+    main(PRIMES, addition)
