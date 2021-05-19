@@ -1,5 +1,5 @@
 import concurrent.futures
-from concurrent.futures import freeze_support()
+from concurrent.futures import freeze_support
 import math
 
 def is_prime(n):
