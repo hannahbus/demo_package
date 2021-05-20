@@ -4,7 +4,7 @@ import math
 import os
 
 def is_prime(n):
-    process_id = n + os.getpid()
+    process_id = os.getpid()
     return process_id
 
 def main(PRIMES, addition = "test"):
