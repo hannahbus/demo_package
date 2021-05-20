@@ -8,7 +8,7 @@ def is_prime(n):
     return process_id
 
 def main(PRIMES, addition = "test"):
-    with concurrent.futures.ProcessPoolExecutor() as executor:
+    with concurrent.futures.ProcessPoolExecutor(max_workers=3) as executor:
         for number, prime in zip(PRIMES, executor.map(is_prime, PRIMES)):
             print('%d is prime: %s' % (number, prime))
             print(addition)
