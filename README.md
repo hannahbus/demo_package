@@ -20,24 +20,3 @@ twine upload --skip-existing dist/*
 You are all set, a new release of your package should be available on PyPI!
 
 
-## Demo 
-
-In the Anaconda Prompt (Windows) or Terminal (Unix-based OS) type
-
-````
-pip install hbussi==4.0 
-python 
-from hbussi import beautify 
-PRIMES = [123, 456, 99484848, 890933] 
-beautify.main(PRIMES)
-```
-
-To test a package on TestPyPI do the following steps: 
-
-First, as for PyPI create a .gz file. Second, upload the package as follows: 
-
-```twine upload --repository testpypi dist/*```
-
-If there are multiple .gz files in the directory dist, then specify the desired one. 
-
-
