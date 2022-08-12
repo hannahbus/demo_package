@@ -1,6 +1,4 @@
-# HBussi
-
-Demo package!
+# Demo package!
 
 To upload new versions on PyPi follow the routine: 
 
