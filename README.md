@@ -39,3 +39,4 @@ twine upload --repository testpypi dist/*
 ```
 python3 -m pip install --index-url https://test.pypi.org/simple/ foo
 ```
+For Windows relate commands refer to the [official package](https://packaging.python.org/en/latest/guides/using-testpypi/)
