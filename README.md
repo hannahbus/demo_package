@@ -28,10 +28,14 @@ Before uploading the package on PyPI, include TestPyPI in the workflow. This is 
 
 (2) Navigate to the correct directory in the terminal.
 
-(3) Upload the package ``foo`` as follows
+```
+python setup.py sdist
+```
+
+(3) Upload the package ``foo`` as follows (presuming you have already uploaded the package before on TestPyPI)
 
 ```
-twine upload --repository testpypi dist/*
+twine upload --verbose --repository testpypi --skip-existing dist/*
 ```
 
 (4) Install as follows 
