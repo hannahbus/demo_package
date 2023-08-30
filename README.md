@@ -38,9 +38,10 @@ python setup.py sdist
 twine upload --verbose --repository testpypi --skip-existing dist/*
 ```
 
-(4) Install as follows (addition ``--extra-index-url`` for install requires in ``setup.py`` to work as well)
+(4) Install as follows
 
 ```
-python3 --extra-index-url pip install --index-url https://test.pypi.org/simple/ foo
+conda install pip # Should you have set up a new conda environment
+pip install --extra-index-url https://test.pypi.org/simple/ mcf
 ```
 For Windows relate commands refer to the [official documentation](https://packaging.python.org/en/latest/guides/using-testpypi/)
