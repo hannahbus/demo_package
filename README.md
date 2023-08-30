@@ -42,6 +42,6 @@ twine upload --verbose --repository testpypi --skip-existing dist/*
 
 ```
 conda install pip # Should you have set up a new conda environment
-pip install --extra-index-url https://test.pypi.org/simple/ mcf
+pip install --extra-index-url https://test.pypi.org/simple/ foo
 ```
 For Windows relate commands refer to the [official documentation](https://packaging.python.org/en/latest/guides/using-testpypi/)
